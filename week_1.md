@@ -42,10 +42,10 @@ Double-click to open it with your browser.
 ### Copy your file there:
 
 ```bash
-scp <yourname>.html student@uchicagowebdev.com:/var/www/html/students
+scp <yourname>.html student@uchicagowebdev.com:/var/www/html/helloclass
 ```
 
-The password is `mpcs52553-2`
+The password is `mpcs52553`
 ---
 
 # Build a Web Page
@@ -190,14 +190,12 @@ comments or a README are good ways of doing this.
 
 # Intro to CSS3
 - Selectors
-  - https://www.w3schools.com/cssref/css_selectors.asp
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
 - Colors, borders, fonts, weights, alignment
 - Box model: margins, padding, auto
   - [CSS Playground](cssplayground.html)
 - Visibility
   - `display: block` and `display: none`
-  - https://www.wsj.com/articles/twilio-asana-to-list-on-long-term-stock-exchange-as-esg-push-continues-11624565701?page=1
-  - https://www.businessinsider.com/
 ---
 
 # Floats
