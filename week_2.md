@@ -70,6 +70,8 @@ column elements, and allow elements like headers to span multiple columns.
 
 [CSS Flexbox - Mozilla Documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 
+[/examples/week_2/flex.html](/examples/week_2/flex.html)
+
 ![Example Flexbox Layout](images/flexbox.png "Example Flexbox Layout")
 ---
 
@@ -78,6 +80,8 @@ column elements, and allow elements like headers to span multiple columns.
 [Basic Concepts of Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 
 [CSS Grid - Mozilla Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+
+[/examples/week_2/grid.html](/examples/week_2/grid.html)
 
 ![Example CSS Grid Layout](images/grid.png "Example CSS Grid Layout")
 ---
@@ -117,6 +121,8 @@ achieve that layout.
 # Advanced Styling: Icons
 ![Sample Web Icons](images/icons.png "Sample Web Icons")
 
+[/examples/week_2/icons.html](/examples/week_2/icons.html)
+
 - [Web Icons Tutorial (W3Schools)](https://www.w3schools.com/icons/)
 - [Font Awesome](https://fontawesome.com/)
 - [Material Design (Google)](https://materializecss.com/icons.html)
@@ -126,6 +132,7 @@ achieve that layout.
 # Responsive Design
 - [Media Queries (Mozilla Documentation)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [Responsive Design (Mozilla Documentation)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+-
 ---
 
 # Advanced Styling: Web Fonts
