@@ -30,6 +30,7 @@ class: agenda
 ---
 
 # Modern Layouts
+[The New York Times](https://nytimes.com)
 ![New York Times Home Page](images/nytimes.png "New York Times Home Page")
 
 ???
