@@ -7,7 +7,7 @@ Week 2: Advanced Layout
 
 class: agenda
 
-# Advanced Styling*
+# Advanced Styling
 - selectors, icons, web fonts, CSS animation
 
 # Modern Layouts
