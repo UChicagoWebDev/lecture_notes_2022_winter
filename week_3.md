@@ -255,11 +255,11 @@ Upload the result again with:
 scp <yourname>.php student@uchicagowebdev.com:/var/www/html/students
 ```
 
-The password is `mpcs52553-2`
+The password is `mpcs52553`
 ---
 
 # Lab: Exercise 3
 
 [A Web Journal](http://uchicagowebdev.com/weblog.php)
 
-[Exercise 3 on GitLab](https://mit.cs.uchicago.edu/trevoraustin/mpcs-52553-austin/tree/master/week_3/exercise_3)
+[Exercise 3 on GitHub Classroom](https://classroom.github.com/a/dygjId3q)
