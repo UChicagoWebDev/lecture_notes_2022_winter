@@ -252,7 +252,7 @@ the value of `HTTP_USER_AGENT` and tell you what browser is visiting the page.
 
 Upload the result again with:
 ```bash
-scp <yourname>.php student@uchicagowebdev.com:/var/www/html/students
+scp <yourname>.php student@uchicagowebdev.com:/var/www/html/helloclass
 ```
 
 The password is `mpcs52553`
