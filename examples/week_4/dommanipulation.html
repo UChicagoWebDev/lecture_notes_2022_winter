@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>DOM Manipulation</title>
+    <style> img {width: 200px;} </style>
 </head>
 <body>
 
@@ -24,13 +25,12 @@
 
     function addListItem() {
         var list = document.body.querySelector("#mylist");
+        var imgUrl = document.body.querySelector("#imageurl").value;
 
         var li = document.createElement("li");
         var img = document.createElement("img");
-        var url = document.body.querySelector("#imageurl").value;
 
-        img.setAttribute("src", url);
-
+        img.setAttribute("src", imgUrl);
         li.appendChild(img);
         list.appendChild(li);
     }
