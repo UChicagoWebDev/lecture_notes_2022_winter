@@ -1,0 +1,30 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+    <title>setTimeout Example</title>
+</head>
+<body>
+
+<input id="delayInput"></input>
+<button id="setTimer" value="Set Timer">Set Timer</button>
+
+<script>
+
+let input = document.getElementById("delayInput");
+let button = document.getElementById("setTimer");
+
+button.addEventListener("click", function () {
+    setTimeout(function(){
+        console.log("Ding!")
+    }, input.value * 1000);
+});
+
+let myGreeting = setTimeout(function() {
+    console.log('Hello!');
+}, 0)
+console.log('Howdy!');
+
+</script>
+</body>
+</html>

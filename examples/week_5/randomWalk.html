@@ -1,0 +1,70 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+    <title>Random Concept Walk</title>
+</head>
+<body>
+
+<h3>Take a random walk though concept space</h3>
+<small>Powered by Bing™</small>
+<div>
+    <input id="input"></input>
+    <button id="walk" value="Walk!">Walk!</button>
+</div>
+
+<div>
+  <ol id="path">
+    <li>Example concept</li>
+    <li>Related concept</li>
+    <li>Related to <em>that</em></li>
+    <li>Now we're really going somewhere!</li>
+    <li>Telephone!</li>
+  </ol>
+</div>
+
+<script>
+
+let input = document.getElementById("input");
+let button = document.getElementById("walk");
+// let BING_API_KEY = "abcdefghijklmnopqrstuvwxyz123456"
+let BING_API_KEY = window.localStorage.getItem('BING_API_KEY'); // Don't actually do this
+
+function getRelatedConcept(seed){
+    let bing = "https://api.bing.microsoft.com/v7.0/images/search?q="
+    let walkHeaders = new Headers();
+    walkHeaders.append("Ocp-Apim-Subscription-Key", BING_API_KEY);
+    walkHeaders.append("Accept", "application/json");
+    walkHeaders.append("Content-Type", 'application/json');
+
+    const myInit = {
+        method: 'GET',
+        headers: walkHeaders,
+    };
+
+    console.log("Searching: "+seed);
+
+    let search = fetch(bing+seed,myInit);
+
+    search
+      .then((response) => {
+        // https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+        return response.json()
+      })
+      .then((json) => {
+        // Do some stuff
+      });
+
+}
+
+button.addEventListener("click", function () {
+    let seed = input.value;
+    console.log(seed);
+
+    getRelatedConcept(seed); // Do some more stuff
+});
+
+
+</script>
+</body>
+</html>
