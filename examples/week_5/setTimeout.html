@@ -14,16 +14,15 @@
 let input = document.getElementById("delayInput");
 let button = document.getElementById("setTimer");
 
-button.addEventListener("click", function () {
-    setTimeout(function(){
-        console.log("Ding!")
+let v = input.value;
+
+button.addEventListener("click", function() {
+  let p = input.value;
+    setTimeout(function() {
+      console.log(p);
     }, input.value * 1000);
 });
 
-let myGreeting = setTimeout(function() {
-    console.log('Hello!');
-}, 0)
-console.log('Howdy!');
 
 </script>
 </body>

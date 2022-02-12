@@ -23,14 +23,47 @@
   </ol>
 </div>
 
+<script src="../../../exercise_4/apikey.js"></script>
 <script>
+let j=0;
 
 let input = document.getElementById("input");
 let button = document.getElementById("walk");
 // let BING_API_KEY = "abcdefghijklmnopqrstuvwxyz123456"
-let BING_API_KEY = window.localStorage.getItem('BING_API_KEY'); // Don't actually do this
+// let BING_API_KEY = window.localStorage.getItem('BING_API_KEY'); // Don't actually do this
+
+function handleConcept(seed){
+  p = search(seed)
+
+  result = p.then((response) => {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+    return response.json()
+  })
+  .then((json) => {
+    related = json.relatedSearches;
+    i = Math.floor(Math.random() * related.length);
+    newQuery = related[i].text;
+    console.log(newQuery);
+    return newQuery;
+  });
+
+  return result;
+}
 
 function getRelatedConcept(seed){
+  handleConcept(seed)
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+  .then((q) => { return handleConcept(q)})
+}
+
+function search(seed){
     let bing = "https://api.bing.microsoft.com/v7.0/images/search?q="
     let walkHeaders = new Headers();
     walkHeaders.append("Ocp-Apim-Subscription-Key", BING_API_KEY);
@@ -44,17 +77,7 @@ function getRelatedConcept(seed){
 
     console.log("Searching: "+seed);
 
-    let search = fetch(bing+seed,myInit);
-
-    search
-      .then((response) => {
-        // https://developer.mozilla.org/en-US/docs/Web/API/Response/json
-        return response.json()
-      })
-      .then((json) => {
-        // Do some stuff
-      });
-
+    return fetch(bing+seed,myInit);
 }
 
 button.addEventListener("click", function () {
