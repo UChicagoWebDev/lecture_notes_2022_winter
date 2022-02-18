@@ -1,0 +1,41 @@
+.container {
+  width: 800px;
+  margin: auto
+}
+
+.hero {
+  text-align: center;
+}
+
+.animals {
+  display: flex;
+}
+
+.animals div {
+  flex: 1;
+}
+
+.animals img {
+  display: block;
+  width: 200px;
+}
+
+img.sad {
+  filter: grayscale(60%);
+}
+
+h2 {
+  height: 50px;
+}
+
+h2.sad {
+  padding-top: 20px;
+  color: #666666;
+  font-weight: normal;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+.happy,img.happy {
+  display: none;
+}

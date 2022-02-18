@@ -51,10 +51,10 @@ function handleConcept(seed){
 }
 
 function getRelatedConcept(seed){
-  handleConcept(seed)
-  .then((q) => { return handleConcept(q)})
-  .then((q) => { return handleConcept(q)})
-  .then((q) => { return handleConcept(q)})
+  let p = handleConcept(seed)
+  .then((anyValue)=> { return handleConcept(anyValue)})
+  .then((a) => { return handleConcept(a)})
+  .then((b) => { return handleConcept(b)})
   .then((q) => { return handleConcept(q)})
   .then((q) => { return handleConcept(q)})
   .then((q) => { return handleConcept(q)})
@@ -62,6 +62,9 @@ function getRelatedConcept(seed){
   .then((q) => { return handleConcept(q)})
   .then((q) => { return handleConcept(q)})
 }
+
+// var s = (if/when p is done)
+
 
 function search(seed){
     let bing = "https://api.bing.microsoft.com/v7.0/images/search?q="
