@@ -4,6 +4,12 @@ function makeBest(animal, pushHistory=true) {
   document.querySelectorAll(".animals ."+animal+" .sad").forEach((n) => {n.setAttribute("style", "display: none")});
   document.querySelectorAll(".animals ."+animal+" .happy").forEach((n) => {n.setAttribute("style", "display: block")});
 
+  if (animal.length > 0 ){
+    document.title = animal + " is best!";
+  } else {
+    document.title = "SPA: Single Page Application";
+  }
+
   if (pushHistory) {
     history.pushState({"animal": animal}, animal+" is Best!", animal);
   }
