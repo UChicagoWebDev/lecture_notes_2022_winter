@@ -56,10 +56,3 @@ def test_signup_and_login(client, new_user):
 
 def test_wrong_password(client, new_user):
     """Tests that I can't log in with invalid credentials"""
-
-    new_username, _ = new_user
-    new_password = "Some Bad Password"
-
-    response = client.post('/api/login', json = {'username': new_username, 'password':new_password})
-
-    assert response.status == "404 NOT FOUND"

@@ -28,8 +28,7 @@ class: agenda
 
 # Event Handling: Enter Key
 ### Lab: Enter Key
-https://mit.cs.uchicago.edu/mpcs52553-sum-21/course/tree/master/week_9/examples/enter_key
-
+https://github.com/UChicagoWebDev/lecture_notes/tree/master/examples/week_9/enter_key
 ---
 
 class: bigquote
@@ -68,7 +67,7 @@ https://docs.pytest.org/en/latest/
 
 # Lab: Add Tests to Password App
 
-https://mit.cs.uchicago.edu/mpcs52553-sum-21/course/tree/master/week_9/examples/passwords_with_tests
+https://github.com/UChicagoWebDev/lecture_notes/tree/master/examples/week_9/passwords_with_tests
 ---
 
 # Continuous Integration
